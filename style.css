@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: ease-in 0.1s;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -14,7 +20,9 @@ a {
     --yellow: #FCB72B;
     --dark-navy: #495567;
     --dim-grey: #939CAA;
-    --white: #FFFFFF
+    --white: #FFFFFF;
+    --dark: #333A44;
+
 }
 
 .container {
@@ -86,6 +94,10 @@ a {
     line-height: 25px;
     letter-spacing: 0px;
     margin-right: 30px;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
 }
 
 /* HERO */
@@ -176,7 +188,8 @@ a {
 /* BENEFIT-EASY */
 
 #benefit-easy,
-#benefit-near, #benefit-hussle {
+#benefit-near,
+#benefit-hussle {
     position: relative;
     padding-bottom: 100px;
 }
@@ -190,10 +203,12 @@ a {
 .benefit-left {
     max-width: 450px;
 }
+
 .benefit-right img {
     max-width: 445px;
     border-radius: 50%;
 }
+
 .benefit-content h3 {
     font-size: 48px;
     line-height: 48px;
@@ -230,7 +245,55 @@ a {
     left: 0;
     transform: rotate(180deg);
 }
+
 .left-ind {
     left: -300px;
     transform: rotate();
+}
+
+/* GET IT */
+#get-it {
+    background-color: var(--dark-navy);
+    background-image: url('./assets/images/footer-circles.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+
+.download h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: var(--white);
+    max-width: 415px;
+}
+
+.sources img:first-child {
+    margin-right: 20px;
+}
+
+/* FOOTER  */
+
+#footer {
+    padding: 35px 0;
+    background-color: var(--dark);
+}
+
+.socials svg {
+    margin-left: 20px;
+}
+
+.socials svg {
+    color: var(--yellow);
+}
+
+.socials svg:hover {
+    color: var(--dim-grey);
 }
