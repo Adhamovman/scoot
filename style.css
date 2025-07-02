@@ -173,48 +173,64 @@ a {
     margin-bottom: 30px;
 }
 
-.card-p {}
-
 /* BENEFIT-EASY */
 
-#benefit-easy {
+#benefit-easy,
+#benefit-near, #benefit-hussle {
     position: relative;
+    padding-bottom: 100px;
 }
 
-.easy-content {
-
+.benefit-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.easy-left {
+.benefit-left {
     max-width: 450px;
 }
-
-.easy-left h3 {
-    margin-bottom: 30px;
+.benefit-right img {
+    max-width: 445px;
+    border-radius: 50%;
 }
-
-.easy-left p {
-    margin-bottom: 40px;
-}
-
-.easy-h {
+.benefit-content h3 {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.14px;
     color: var(--dark-navy);
+    margin-bottom: 30px;
 }
 
-.easy-round {
+.benefit-content p {
+    margin-bottom: 40px;
+}
+
+
+.right-round,
+.right-ind {
+    position: absolute;
+    right: 0;
+}
+
+.right-ind {
+    bottom: 100px;
+}
+
+/* benefit-near */
+
+.benefit-near {
+    flex-direction: row-reverse;
+}
+
+.left-round,
+.left-ind {
     position: absolute;
     top: 0;
-    right: 0
+    left: 0;
+    transform: rotate(180deg);
 }
-
-.easy-ind {
-    position: absolute;
-    bottom: 0;
-    right: 0
+.left-ind {
+    left: -300px;
+    transform: rotate();
 }
